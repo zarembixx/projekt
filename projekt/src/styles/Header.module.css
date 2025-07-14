@@ -36,6 +36,25 @@
     transition: background-color 0.3s ease;
 }
 
+
+@media (max-width: 768px) {
+    .headerContent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navLinks a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .navLinks a:hover {
     background-color: #ff6666;
 }
