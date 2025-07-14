@@ -42,7 +42,6 @@ Aplikacja uruchomi się pod adresem http://localhost:5173 (lub innym wskazanym w
 - Przeszukiwanie modeli samochodów po marce.
 - Wyświetlanie szczegółów technicznych (trims) wybranego modelu w formie kafelków.
 - Formularz kontaktowy z walidacją.
-- Routing pomiędzy podstronami: Strona główna, O aplikacji, Kontakt.
 - Styl responsywny — działa na komputerze i telefonie.
 
 
