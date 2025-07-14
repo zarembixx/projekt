@@ -28,8 +28,8 @@ export default function Contact() {
 
         if (!formData.message.trim()) {
             newErrors.message = "Wiadomość jest wymagana.";
-        } else if (formData.message.length < 2) {
-            newErrors.message = "Wiadomość musi mieć co najmniej 2 znaki.";
+        } else if (formData.message.length < 10) {
+            newErrors.message = "Wiadomość musi mieć co najmniej 10 znaków.";
         }
 
         return newErrors;
