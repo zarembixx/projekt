@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -7,15 +7,26 @@ import Contact from "./pages/Contact";
 import styles from "./styles/App.module.css";
 
 export default function App() {
+  const [page, setPage] = useState("home");
+
+  function renderPage() {
+    switch (page) {
+      case "home":
+        return <Home />;
+      case "about":
+        return <About />;
+      case "contact":
+        return <Contact />;
+      default:
+        return <Home />;
+    }
+  }
+
   return (
     <div className={styles.app}>
-      <Header />
+      <Header currentPage={page} onNavigate={setPage} />
       <main className={styles.main}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        {renderPage()}
       </main>
       <Footer />
     </div>
