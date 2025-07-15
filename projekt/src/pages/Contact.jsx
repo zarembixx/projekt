@@ -48,7 +48,6 @@ export default function Contact() {
         } else {
             setErrors({});
             setSubmitted(true);
-            // Tutaj można np. wysłać dane do backendu
             console.log("Wysłano wiadomość:", formData);
             setFormData({ name: "", email: "", message: "" });
         }
