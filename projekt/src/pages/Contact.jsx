@@ -48,6 +48,7 @@ export default function Contact() {
         } else {
             setErrors({});
             setSubmitted(true);
+            // Tutaj można np. wysłać dane do backendu
             console.log("Wysłano wiadomość:", formData);
             setFormData({ name: "", email: "", message: "" });
         }
@@ -94,7 +95,7 @@ export default function Contact() {
                     )}
                 </div>
 
-                <button type="submit">Wyślij</button>
+                <button type="submit" className={styles.button}>Wyślij</button>
 
                 {submitted && (
                     <p className={styles.success}>Wiadomość została wysłana!</p>
