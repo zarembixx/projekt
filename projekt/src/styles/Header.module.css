@@ -28,14 +28,26 @@
     gap: 25px;
 }
 
-.navLinks a {
-    color: white;
-    text-decoration: none;
-    padding: 6px 10px;
+.navLinks button {
+    background-color: white;
+    color: #cc3333;
+    font-weight: bold;
+    border: none;
+    padding: 8px 14px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.navLinks button:hover {
+    background-color: #ff6666;
+    color: white;
+}
+
+.activeLink {
+    background-color: #990000;
+    color: white;
+}
 
 @media (max-width: 768px) {
     .headerContent {
@@ -49,12 +61,8 @@
         margin-top: 1rem;
     }
 
-    .navLinks a {
+    .navLinks button {
         width: 100%;
         text-align: center;
     }
-}
-
-.navLinks a:hover {
-    background-color: #ff6666;
 }
