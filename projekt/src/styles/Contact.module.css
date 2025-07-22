@@ -33,7 +33,6 @@ textarea {
     font-size: 1rem;
     color: #333;
     background-color: #fdfdfd;
-    /* jasne tło */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -49,7 +48,7 @@ textarea {
     min-height: 120px;
 }
 
-button {
+.button {
     background-color: #e53935;
     color: white;
     border: none;
@@ -61,7 +60,7 @@ button {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: #c62828;
     transform: scale(1.03);
 }
